@@ -1,0 +1,616 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Герои Dota 2</title>
+	<meta name="description" content="Полный список героев и описание их способностей Dota 2" />
+	<link rel="stylesheet" href="http://dota2.ru/css/style.css"/>
+    <link rel="stylesheet" href="http://dota2.ru/css/style_heroes.css"/>
+	<link rel="stylesheet" href="http://dota2.ru/css/fancybox.css"/>
+	<script type="text/javascript" src="http://dota2.ru/js/jquery-1.7.1.min.js"></script>
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://dota2.ru/css/ie.css"/>
+	<![endif]-->
+	<!--[if IE 6]>
+	<script type="text/javascript" src="http://dota2.ru/js/reject.js"></script>
+	<script type="text/javascript">$(document).ready(function(){$.reject();})</script>
+	<![endif]-->
+	<script type="text/javascript" src="http://dota2.ru/js/fancybox.js"></script>
+	<script type="text/javascript" src="http://dota2.ru/js/news-tabs.js"></script>
+	<script type="text/javascript" src="http://dota2.ru/js/news-slider.js"></script>
+	<script type="text/javascript" src="http://dota2.ru/js/streams-carousel.js"></script>
+	<script type="text/javascript" src="http://dota2.ru/js/video-tabs.js"></script>
+	<script type="text/javascript" src="http://dota2.ru/js/rotator.js"></script>
+    <script type="text/javascript" src="http://dota2.ru/js/functions.js"></script>
+    <script type="text/javascript" src="http://dota2.ru/js/all.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.fancybox').fancybox();
+			$('#guides-carousel').tinycarousel({
+				display: 6,
+				duration: 1000
+			});	
+			$('#streams-carousel').tinycarousel({
+				display: 1,
+				duration: 500
+			});	
+			$('#video-tabs > ul').tabs({ fx: {} });
+			$('#tour-tabs > ul').tabs({ fx: { opacity: 'toggle' } });
+		});
+		$(function(){
+			$('#rotator').rotator({
+				slides: [
+					{
+						url:'http://dota2.ru/forum/topic/392-oznakomlenie-s-igroi-i-otveti-na-nekotorie-vopr/',
+						img:'http://dota2.ru/img/know-more.jpg'
+					},
+					{
+						url:'http://dota2.ru/vacancy',
+						img:'http://dota2.ru/img/to-team.jpg'
+					},
+					{
+						url:'http://dota2.ru/trade',
+						img:'http://dota2.ru/uploads/images/shop2zqz.jpg'
+					}
+				],
+				speed: 500,
+				timeout: 10000,
+				random: true,
+				width: 240,
+				height: 80,
+				autorun: true
+			});
+		})
+	</script>
+	<!-- Put this script tag to the <head> of your page -->
+	<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+	<script type="text/javascript">
+	  VK.init({apiId: 2258108, onlyWidgets: true});
+	</script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-15834660-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body><div class="wrap">
+	<div class="header">
+		<a href="/" class="logo"></a>
+		<div class="vk-widget">
+			<div id="vk_groups"></div>
+			<script type="text/javascript">
+			VK.Widgets.Group("vk_groups", {mode: 1, width: "200", height: "290"}, 20793074);
+			</script>
+		</div>
+	</div>
+	<!-- <div class="search">
+		<input type="image" src="http://dota2.ru/img/search-btn.png" class="s-img-input" />
+		<input type="text" value="Поиск..." class="s-input" onblur="if(this.value=='') this.value='Поиск...';" onfocus="if(this.value=='Поиск...') this.value='';" />
+	</div> -->
+	<div class="clb"></div><div class="main">
+		<div class="bg-top"></div>
+		<div class="m-wrap">
+    <ul class="menu">
+    	<li class="m-home "><a href="http://dota2.ru/"><span></span>Главная</a></li>
+    	<li class="m-forum"><a href="http://dota2.ru/forum/"><span></span>Форум</a></li>
+    	<li class="m-news ">
+			<a href="/news/"><span></span>Новости</a>
+    		<!--<ol>
+    			<li><a href="#">Патчи</a></li>
+    			<li><a href="#">Турниры</a></li>
+    			<li><a href="#">Интервью</a></li>
+    			<li><a href="#">Команды</a></li>
+    			<li><a href="#">Разное</a></li>
+    		</ol>-->
+		</li>
+    	<li class="m-knowledges active">
+    		<a href="#"><span></span>Новичку</a>
+    		<ol>
+    			<li class="sm-active"><a href="http://dota2.ru/heroes/">Герои</a></li>
+    			<li class=""><a href="http://dota2.ru/guides/">Гайды</a></li>
+    			<li class=""><a href="http://dota2.ru/items/">Предметы</a></li>
+    			<!-- <li><a href="#">Тактика</a></li> -->
+    			<li><a href="/forum/forum/48-modifikacii/">Модификации</a></li>
+    			<li><a href="/forum/forum/47-tehnicheskaja-podderzhka/">Тех. поддержка</a></li>
+    		</ol>
+    	</li>
+		<li class="m-streams "><a href="http://dota2.ru/streams/"><span></span>Стримы</a></li>
+    	<li class="m-shop "><a  href="http://dota2.ru/video/"><span></span>Видео</a></li>
+		<li class="m-media "><a href="http://dota2.ru/gallery/"><span></span>Галерея</a></li>
+    	<li class="m-tournaments ">
+			<a href="http://dota2.ru/tournaments/"><span></span>Турниры</a>
+			<ol>
+    			<li class=""><a href="http://dota2.ru/matches/">Матчи</a></li>
+    			<li class=""><a href="http://dota2.ru/search/">В поисках команды</a></li>
+    			<!-- <li><a href="#">Воды</a></li> -->
+    		</ol>
+		</li>
+    	<li class="m-info ">
+    		<a href="#"><span></span>Разное</a>
+    		<ol>
+    			<li class=""><a href="/adv/">Реклама на сайте</a></li>
+    			<li class=""><a href="/vacancy/">Набор в команду</a></li>
+    			<li class=""><a href="/contacts/">Контакты</a></li>
+    			<li class=""><a href="/sitemap/">Карта сайта</a></li>
+    		</ol>
+    	</li>
+    	<li class="forum-user">
+                                    <div class="f-avatar"><img src="http://dota2.ru/img/noneAvatar.png" alt="img"/></div>
+                    <div class="f-all">
+                    <form action="http://dota2.ru/log/login/" method="POST">
+                    
+                        <input class="forum-user-login" type="text" name="user_login" />
+                        <input class="forum-user-pass" type="password" name="user_password" />
+                        <div class="forum-user-check"><input type="checkbox" name="rememberMe" value="true" /> Запомнить</div>
+                        <input class="forum-user-submit" type="submit" name="submit" value="Войти" />
+						<a href="/forum/index.php?app=core&module=global&section=register" class="forum-user-reg">Регистрация</a>
+                    
+                    </form>
+                
+                                
+    		</div>
+    	</li>
+    </ul>
+    <div class="clb"></div>
+    <div class="hadv-top"><div class="ht-in"></div></div><div class="hadv">
+	<div class="hadv-single">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0294405751811608";
+/* D2 ������� ����� */
+google_ad_slot = "1235311747";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	</div>
+	<div class="hadv-sep"></div>
+	<div class="hadv-single">
+<script type="text/javascript">
+oyy_banner_id = '12105';
+document.write('<sc'+'ript type="text/javascript" src="'+('https:'==document.location.protocol?'https':'http')+'://ad.oyy.ru/oyy.js?rnd='+Math.round(Math.random()*100000)+'"></sc'+'ript>');
+</script>
+	</div>
+	<div class="relevance"><a href="http://dota2.ru/trade"><img src="/uploads/images/shop2zqz.jpg" alt="Dota 2 Shop ��������"/></a></div>
+</div>
+<div class="hadv-btm"><div class="hb-in"></div></div>
+<div class="clb"></div><div class="page">
+				<div class="page-left">
+					
+					<div class="vadv">
+<!-- Pingmedia 240x400 code START-->
+<script language="javascript" type="text/javascript"><!--
+if(typeof(ar_cn)=="undefined") var ar_cn=1;
+var ar_Tail=document.referrer ? escape(document.referrer) : 'unknown';
+var ar_link="http://ad.adriver.ru/cgi-bin/erle.cgi?sid=180327&bt=49&target=blank&tail256=" + ar_Tail;
+document.write('<div style="visibility:hidden;height:0px;"><iframe id="ar_container_'+ar_cn+'" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div><div id="ad_ph_'+ar_cn+'"><\/div>');
+function ar_getDoc(t,n,l){var doc;if(t<100){if(document.all && !window.opera){doc = window.frames['ar_container_'+n].document}
+else if(document.getElementById){doc=document.getElementById('ar_container_'+n).contentDocument}
+if(!doc){setTimeout('ar_getDoc('+(++t)+','+n+',"'+l+'")', 100)}else {var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+doc.write ('<sc'+'ript language="JavaScript" type="text/javascript">var ar_bnum='+n+';<\/sc'+'ript>');
+doc.write ('<sc'+'ript language="JavaScript" type="text/javascript" src="'+l+'&rnd='+RndNum4NoCash+'"><\/sc'+'ript>');}}}
+(function(num,link){function addEvent(e,t,f){if(e.addEventListener)e.addEventListener(t,f,false);else if(e.attachEvent)e.attachEvent('on'+t,f)}
+function removeEvent(e,t,f){if(e.removeEventListener)e.removeEventListener(t,f,false);else if(e.detachEvent)e.detachEvent('on'+t,f)}
+var BannerLoader={top:0,height:400,cm:document.compatMode=="CSS1Compat",
+scroll:function(){var ch=self.innerHeight||this.cm&&document.documentElement.clientHeight||document.body.clientHeight;
+var st=self.pageYOffset||this.cm&&document.documentElement.scrollTop||document.body.scrollTop;
+var sh=self.scrollHeight||this.cm&&document.documentElement.scrollHeight||document.body.scrollHeight;
+if((st-this.top<=this.height*0.2&&st+ch-this.top>=this.height*0.8)||(sh-this.top<=this.height*0.8&&(sh-st-ch<1||sh<ch))){
+removeEvent(window,'scroll',this.sfunc);ar_getDoc(0,num,link)}},
+sfunc: function(){BannerLoader.scroll()},init:function(){var t=this,obj=document.getElementById('ad_ph_'+num);
+if(obj){while(obj.offsetParent){t.top += obj.offsetTop; obj = obj.offsetParent}
+addEvent(window,'scroll',this.sfunc);t.scroll()}}};addEvent(window, 'load', function(){BannerLoader.init()})})(ar_cn++,ar_link);
+//--></script>
+<!-- Pingmedia 240x400 code END -->
+					</div>
+					
+                                            <div class="page-single">
+    						<h3 class="s14px"><a href="http://dota2.ru/news/">Новости</a></h3>
+    						<div class="page-single-wrap">
+                                                                                                            <h4 class="page-single-news"><a href="http://dota2.ru/news/dota-2-shop-obmennik/">Dota 2 Shop Обменник</a></h4>
+                                                                            <h4 class="page-single-news"><a href="http://dota2.ru/news/vstrechajjte-eyes-on-u-teper-v-dota-2/">Встречайте! EYES ON U теперь в DotA 2!</a></h4>
+                                                                            <h4 class="page-single-news"><a href="http://dota2.ru/news/final-joindota-masters-viii/">Финал joinDOTA Masters VIII</a></h4>
+                                                                            <h4 class="page-single-news"><a href="http://dota2.ru/news/plamennyjj-privet-s-vostoka/">Пламенный привет с Востока!</a></h4>
+                                                                            <h4 class="page-single-news"><a href="http://dota2.ru/news/west-kvalifikaciya/">West квалификация</a></h4>
+                                                                        						</div>
+    					</div>
+                                        
+					                    
+                        					<div class="page-single">
+    						<h3 class="s14px"><a href="http://dota2.ru/streams/">Стримы</a></h3>
+    						<div class="page-single-wrap">
+                            
+                            
+                                                                                                                                    
+                                        <a href="http://dota2.ru/streams/v1lat-casp/" class="page-streams-link">
+            								<div class="str-single-name">Star Series</div>
+            								<div class="str-single-img">
+            									<div class="str-single-border ssb-red"></div>
+            									<div class="str-single-author">by v1lat + Casp</div>
+												<div class="str-single-views">7646</div>
+            									<img src="http://dota2.ru/img/streams/thumb_2545_Star.jpg">
+            								</div>
+            							</a>
+                                                                                                                                            
+                                        <a href="http://dota2.ru/streams/versuta/" class="page-streams-link">
+            								<div class="str-single-name">Dota 2 Tournament</div>
+            								<div class="str-single-img">
+            									<div class="str-single-border ssb-gold"></div>
+            									<div class="str-single-author">by VeRsuta</div>
+												<div class="str-single-views">127</div>
+            									<img src="http://dota2.ru/img/streams/thumb_2545_76.jpg">
+            								</div>
+            							</a>
+                                                                                                                                            
+                                        <a href="http://dota2.ru/streams/sinister/" class="page-streams-link">
+            								<div class="str-single-name">Dota2 pub games solo</div>
+            								<div class="str-single-img">
+            									<div class="str-single-border "></div>
+            									<div class="str-single-author">by Sinister</div>
+												<div class="str-single-views">129</div>
+            									<img src="http://dota2.ru/img/streams/thumb_5915_icon.jpg">
+            								</div>
+            							</a>
+                                                                                                                                            
+                                        <a href="http://dota2.ru/streams/filactin/" class="page-streams-link">
+            								<div class="str-single-name">ПИКНИ ПУДЖА ВЫИГРАЙ ДОТУУУУУУУ</div>
+            								<div class="str-single-img">
+            									<div class="str-single-border "></div>
+            									<div class="str-single-author">by Filactin</div>
+												<div class="str-single-views">5</div>
+            									<img src="http://dota2.ru/img/streams/thumb_8384_f77d130edded.jpg">
+            								</div>
+            							</a>
+                                                                                                    							<div class="clb"></div>
+    						</div>
+    					</div>
+                                        
+                        					<div class="page-single">
+    						<h3 class="s14px"><a href="/video/">Видео</a></h3>
+    						<div class="page-single-wrap">
+                            
+                                                            
+                                                                            <a href="http://dota2.ru/video/dota2-starseries-s2-mousesports-vs-clg/" class="page-video-link">
+            								<div class="str-single-name">DOTA2 StarSeries S2 - Mousesports vs CLG</div>
+            								<div class="str-single-img"><img src="http://i2.ytimg.com/vi/2E1r3ne38b4/default.jpg"></div>
+            							</a>
+                                                                            <a href="http://dota2.ru/video/dota2-starseries-s2-darer-vs-egmust-see/" class="page-video-link">
+            								<div class="str-single-name">DOTA2 StarSeries S2 - Darer vs EG(MUST SEE!!!)</div>
+            								<div class="str-single-img"><img src="http://i2.ytimg.com/vi/z609bAzJfes/default.jpg"></div>
+            							</a>
+                                                                            <a href="http://dota2.ru/video/dota2-starseries-s2-mtw-vs-sgc/" class="page-video-link">
+            								<div class="str-single-name">DOTA2 StarSeries S2 - mTw vs SGC</div>
+            								<div class="str-single-img"><img src="http://i2.ytimg.com/vi/qY26nkWk7PQ/default.jpg"></div>
+            							</a>
+                                                                            <a href="http://dota2.ru/video/dota2-starseries-s2-keita-vs-eg/" class="page-video-link">
+            								<div class="str-single-name">DOTA2 StarSeries S2 - Keita vs EG</div>
+            								<div class="str-single-img"><img src="http://i2.ytimg.com/vi/xdltA3M57YQ/default.jpg"></div>
+            							</a>
+                                                                                                    
+    							<div class="clb"></div>
+    						</div>
+    					</div>
+                                        
+                        					<div class="page-single">
+    						<h3 class="s14px"><a href="/gallery/">Галерея</a></h3>
+    						<div class="page-single-wrap">
+                            
+                                                                                
+                                        <a class="fancybox page-gallery-link" rel="group" href="http://fc01.deviantart.net/fs70/i/2012/146/6/0/wrath_of_nature___by_rannero-d514ly6.jpg"><img src="http://dota2.ru/img/gallery/zthumb_wrath_of_nature___by_rannero-d514ly6.jpg"></a>
+                                                
+                                        <a class="fancybox page-gallery-link" rel="group" href="http://media.steampowered.com/apps/dota2/posts/ogre_magi_full.jpg"><img src="http://dota2.ru/img/gallery/thumb_ogre_magi_full.jpg"></a>
+                                                
+                                        <a class="fancybox page-gallery-link" rel="group" href="http://cs11275.userapi.com/u31984205/119619815/z_4cfb5764.jpg"><img src="http://dota2.ru/img/gallery/zthumb_z_4cfb5764.jpg"></a>
+                                                
+                                        <a class="fancybox page-gallery-link" rel="group" href="http://savepic.net/2829611.png"><img src="http://dota2.ru/img/gallery/zthumb_2829611.png"></a>
+                                                                        							<div class="clb"></div>
+    						</div>
+    					</div>
+                    				</div>
+				<div class="page-content"><div class="page-content-header">
+	<h1>Герои</h1>
+</div>
+<div class="page-content-main">
+		
+	<div class="all-heroes-radiant">
+	<div class="all-heroes-side">Radiant</div>
+            <div><strong>Сила:</strong></div>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/earthshaker/"><img src="http://dota2.ru/img/heroes/earthshaker/icon.jpg" data-tooltip="earthshaker" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/sven/"><img src="http://dota2.ru/img/heroes/sven/icon.jpg" data-tooltip="sven" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/tiny/"><img src="http://dota2.ru/img/heroes/tiny/icon.jpg" data-tooltip="tiny" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/kunkka/"><img src="http://dota2.ru/img/heroes/kunkka/icon.jpg" data-tooltip="kunkka" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/beastmaster/"><img src="http://dota2.ru/img/heroes/beastmaster/icon.jpg" data-tooltip="beastmaster" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/dragon-knight/"><img src="http://dota2.ru/img/heroes/dragon_knight/icon.jpg" data-tooltip="dragon_knight" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/clockwerk/"><img src="http://dota2.ru/img/heroes/clockwerk/icon.jpg" data-tooltip="clockwerk" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/omniknight/"><img src="http://dota2.ru/img/heroes/omniknight/icon.jpg" data-tooltip="omniknight" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/huskar/"><img src="http://dota2.ru/img/heroes/huskar/icon.jpg" data-tooltip="huskar" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/alchemist/"><img src="http://dota2.ru/img/heroes/alchemist/icon.jpg" data-tooltip="alchemist" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/brewmaster/"><img src="http://dota2.ru/img/heroes/brewmaster/icon.jpg" data-tooltip="brewmaster" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/treant-protector/"><img src="http://dota2.ru/img/heroes/treant_protector/icon.jpg" data-tooltip="treant_protector" data-tooltip-hero /></a>
+                <div class="clb"></div>
+            <div><strong>Ловкость:</strong></div>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/anti-mage/"><img src="http://dota2.ru/img/heroes/anti_mage/icon.jpg" data-tooltip="anti_mage" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/drow-ranger/"><img src="http://dota2.ru/img/heroes/drow_ranger/icon.jpg" data-tooltip="drow_ranger" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/juggernaut/"><img src="http://dota2.ru/img/heroes/juggernaut/icon.jpg" data-tooltip="juggernaut" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/mirana/"><img src="http://dota2.ru/img/heroes/mirana/icon.jpg" data-tooltip="mirana" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/morphling/"><img src="http://dota2.ru/img/heroes/morphling/icon.jpg" data-tooltip="morphling" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/phantom-lancer/"><img src="http://dota2.ru/img/heroes/phantom_lancer/icon.jpg" data-tooltip="phantom_lancer" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/vengeful-spirit/"><img src="http://dota2.ru/img/heroes/vengeful_spirit/icon.jpg" data-tooltip="vengeful_spirit" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/riki/"><img src="http://dota2.ru/img/heroes/riki/icon.jpg" data-tooltip="riki" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/sniper/"><img src="http://dota2.ru/img/heroes/sniper/icon.jpg" data-tooltip="sniper" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/bounty-hunter/"><img src="http://dota2.ru/img/heroes/bounty_hunter/icon.jpg" data-tooltip="bounty_hunter" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/ursa/"><img src="http://dota2.ru/img/heroes/ursa/icon.jpg" data-tooltip="ursa" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/lone-druid/"><img src="http://dota2.ru/img/heroes/lone_druid/icon.jpg" data-tooltip="lone_druid" data-tooltip-hero /></a>
+                <div class="clb"></div>
+            <div><strong>Интеллект:</strong></div>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/crystal-maiden/"><img src="http://dota2.ru/img/heroes/crystal_maiden/icon.jpg" data-tooltip="crystal_maiden" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/puck/"><img src="http://dota2.ru/img/heroes/puck/icon.jpg" data-tooltip="puck" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/storm-spirit/"><img src="http://dota2.ru/img/heroes/storm_spirit/icon.jpg" data-tooltip="storm_spirit" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/windrunner/"><img src="http://dota2.ru/img/heroes/windrunner/icon.jpg" data-tooltip="windrunner" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/zeus/"><img src="http://dota2.ru/img/heroes/zeus/icon.jpg" data-tooltip="zeus" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/lina/"><img src="http://dota2.ru/img/heroes/lina/icon.jpg" data-tooltip="lina" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/shadow-shaman/"><img src="http://dota2.ru/img/heroes/shadow_shaman/icon.jpg" data-tooltip="shadow_shaman" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/tinker/"><img src="http://dota2.ru/img/heroes/tinker/icon.jpg" data-tooltip="tinker" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/natures-prophet/"><img src="http://dota2.ru/img/heroes/natures_prophet/icon.jpg" data-tooltip="natures_prophet" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/enchantress/"><img src="http://dota2.ru/img/heroes/enchantress/icon.jpg" data-tooltip="enchantress" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/jakiro/"><img src="http://dota2.ru/img/heroes/jakiro/icon.jpg" data-tooltip="jakiro" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/chen/"><img src="http://dota2.ru/img/heroes/chen/icon.jpg" data-tooltip="chen" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/silencer/"><img src="http://dota2.ru/img/heroes/silencer/icon.jpg" data-tooltip="silencer" data-tooltip-hero /></a>  
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/ogre-magi/"><img src="http://dota2.ru/img/heroes/ogre_magi/icon.jpg" data-tooltip="ogre_magi" data-tooltip-hero /></a>  
+                <div class="clb"></div>
+    </div>
+    
+    <div class="all-heroes-dire">
+	<div class="all-heroes-side">Dire</div>
+            <div><strong>Сила:</strong></div>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/axe/"><img src="http://dota2.ru/img/heroes/axe/icon.jpg" data-tooltip="axe" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/pudge/"><img src="http://dota2.ru/img/heroes/pudge/icon.jpg" data-tooltip="pudge" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/sand-king/"><img src="http://dota2.ru/img/heroes/sand_king/icon.jpg" data-tooltip="sand_king" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/slardar/"><img src="http://dota2.ru/img/heroes/slardar/icon.jpg" data-tooltip="slardar" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/tidehunter/"><img src="http://dota2.ru/img/heroes/tidehunter/icon.jpg" data-tooltip="tidehunter" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/skeleton-king/"><img src="http://dota2.ru/img/heroes/skeleton_king/icon.jpg" data-tooltip="skeleton_king" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/lifestealer/"><img src="http://dota2.ru/img/heroes/lifestealer/icon.jpg" data-tooltip="lifestealer" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/night-stalker/"><img src="http://dota2.ru/img/heroes/night_stalker/icon.jpg" data-tooltip="night_stalker" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/doom-bringer/"><img src="http://dota2.ru/img/heroes/doom_bringer/icon.jpg" data-tooltip="doom_bringer" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/spirit-breaker/"><img src="http://dota2.ru/img/heroes/spirit_breaker/icon.jpg" data-tooltip="spirit_breaker" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/lycanthrope/"><img src="http://dota2.ru/img/heroes/lycanthrope/icon.jpg" data-tooltip="lycanthrope" data-tooltip-hero /></a>
+                <div class="clb"></div>
+            <div><strong>Ловкость:</strong></div>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/bloodseeker/"><img src="http://dota2.ru/img/heroes/bloodseeker/icon.jpg" data-tooltip="bloodseeker" data-tooltip-hero /></a> 
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/shadow-fiend/"><img src="http://dota2.ru/img/heroes/shadow_fiend/icon.jpg" data-tooltip="shadow_fiend" data-tooltip-hero /></a> 
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/razor/"><img src="http://dota2.ru/img/heroes/razor/icon.jpg" data-tooltip="razor" data-tooltip-hero /></a> 
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/venomancer/"><img src="http://dota2.ru/img/heroes/venomancer/icon.jpg" data-tooltip="venomancer" data-tooltip-hero /></a> 
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/faceless-void/"><img src="http://dota2.ru/img/heroes/faceless_void/icon.jpg" data-tooltip="faceless_void" data-tooltip-hero /></a> 
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/viper/"><img src="http://dota2.ru/img/heroes/viper/icon.jpg" data-tooltip="viper" data-tooltip-hero /></a> 
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/clinkz/"><img src="http://dota2.ru/img/heroes/clinkz/icon.jpg" data-tooltip="clinkz" data-tooltip-hero /></a> 
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/broodmother/"><img src="http://dota2.ru/img/heroes/broodmother/icon.jpg" data-tooltip="broodmother" data-tooltip-hero /></a> 
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/weaver/"><img src="http://dota2.ru/img/heroes/weaver/icon.jpg" data-tooltip="weaver" data-tooltip-hero /></a> 
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/spectre/"><img src="http://dota2.ru/img/heroes/spectre/icon.jpg" data-tooltip="spectre" data-tooltip-hero /></a> 
+                <div class="clb"></div>
+            <div><strong>Интеллект:</strong></div>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/bane/"><img src="http://dota2.ru/img/heroes/bane/icon.jpg" data-tooltip="bane" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/lich/"><img src="http://dota2.ru/img/heroes/lich/icon.jpg" data-tooltip="lich" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/lion/"><img src="http://dota2.ru/img/heroes/lion/icon.jpg" data-tooltip="lion" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/witch-doctor/"><img src="http://dota2.ru/img/heroes/witch_doctor/icon.jpg" data-tooltip="witch_doctor" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/enigma/"><img src="http://dota2.ru/img/heroes/enigma/icon.jpg" data-tooltip="enigma" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/necrolyte/"><img src="http://dota2.ru/img/heroes/necrolyte/icon.jpg" data-tooltip="necrolyte" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/warlock/"><img src="http://dota2.ru/img/heroes/warlock/icon.jpg" data-tooltip="warlock" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/queen-of-pain/"><img src="http://dota2.ru/img/heroes/queen_of_pain/icon.jpg" data-tooltip="queen_of_pain" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/death-prophet/"><img src="http://dota2.ru/img/heroes/death_prophet/icon.jpg" data-tooltip="death_prophet" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/pugna/"><img src="http://dota2.ru/img/heroes/pugna/icon.jpg" data-tooltip="pugna" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/dazzle/"><img src="http://dota2.ru/img/heroes/dazzle/icon.jpg" data-tooltip="dazzle" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/leshrac/"><img src="http://dota2.ru/img/heroes/leshrac/icon.jpg" data-tooltip="leshrac" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/dark-seer/"><img src="http://dota2.ru/img/heroes/dark_seer/icon.jpg" data-tooltip="dark_seer" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/batrider/"><img src="http://dota2.ru/img/heroes/batrider/icon.jpg" data-tooltip="batrider" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/ancient-apparition/"><img src="http://dota2.ru/img/heroes/ancient_apparition/icon.jpg" data-tooltip="ancient_apparition" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/invoker/"><img src="http://dota2.ru/img/heroes/invoker/icon.jpg" data-tooltip="invoker" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/outworld-destroyer/"><img src="http://dota2.ru/img/heroes/obsidian_destroyer/icon.jpg" data-tooltip="obsidian_destroyer" data-tooltip-hero /></a>
+                    <a class="all-heroes-link" href="http://dota2.ru/heroes/shadow-demon/"><img src="http://dota2.ru/img/heroes/shadow_demon/icon.jpg" data-tooltip="shadow_demon" data-tooltip-hero /></a>
+                <div class="clb"></div>
+	</div>
+	<div class="clb"></div>
+</div><div class="page-content-adv">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0294405751811608";
+/* D2 ���������2 */
+google_ad_slot = "5064231088";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div></div>
+				<div class="page-right">
+<div class="vadv">
+<script type='text/javascript' src='http://c.am11.ru/code/bn/js.php?u=9076&f=2'></script>
+</div>
+                    
+                        					<div class="page-single">
+    						<h3 class="s14px"><a href="http://dota2.ru/guides/">Гайды</a></h3>
+    						<div class="page-single-wrap">
+                                                                                                                                                        <a href="http://dota2.ru/guides/200-zeus-lord-of-olympus/" class="page-hero-single"><img src="http://dota2.ru/img/heroes/zeus/icon.jpg" data-tooltip="zeus" data-tooltip-hero /></a>
+                                                                                                                                                                <a href="http://dota2.ru/guides/199-anti-mage-by-jb/" class="page-hero-single"><img src="http://dota2.ru/img/heroes/anti_mage/icon.jpg" data-tooltip="anti_mage" data-tooltip-hero /></a>
+                                                                                                                                                                <a href="http://dota2.ru/guides/198-bounty-hunter-ubijjca/" class="page-hero-single"><img src="http://dota2.ru/img/heroes/bounty_hunter/icon.jpg" data-tooltip="bounty_hunter" data-tooltip-hero /></a>
+                                                                                                                                                                <a href="http://dota2.ru/guides/197-venomancer-by-danger/" class="page-hero-single"><img src="http://dota2.ru/img/heroes/venomancer/icon.jpg" data-tooltip="venomancer" data-tooltip-hero /></a>
+                                                                                                                                                                <a href="http://dota2.ru/guides/194-gajjd-crystal-maiden/" class="page-hero-single"><img src="http://dota2.ru/img/heroes/crystal_maiden/icon.jpg" data-tooltip="crystal_maiden" data-tooltip-hero /></a>
+                                                                                                                                                                <a href="http://dota2.ru/guides/193-slardar-mego-ubijjca-tank-dizejjblerby-2dayplay-/" class="page-hero-single"><img src="http://dota2.ru/img/heroes/slardar/icon.jpg" data-tooltip="slardar" data-tooltip-hero /></a>
+                                                                                                                							<div class="clb"></div>
+    						</div>
+    					</div>
+                    					
+					<div class="page-single">
+						<h3 class="s14px"><a href="http://dota2.ru/forum/">Форум</a></h3>
+						<div class="page-fade-wrap">
+							<ul class="page-forum-links">
+																											<li><a href="http://dota2.ru/forum/index.php/topic/13653-budet-li-segodnja-igrat-m5/">Будет ли сегодня играть М5.</a></li>
+																			<li><a href="http://dota2.ru/forum/index.php/topic/13652-vopros/">Вопрос</a></li>
+																			<li><a href="http://dota2.ru/forum/index.php/topic/13651-moi-dizain-interfeisa/">Мой дизайн интерфейса</a></li>
+																			<li><a href="http://dota2.ru/forum/index.php/topic/13650-kak-smenit-directx-na-opengl/">Как сменить DirectX на OpenGL</a></li>
+																			<li><a href="http://dota2.ru/forum/index.php/topic/13649-trebujutsja-kerri-v-tripl-i-polusap/">Требуются керри в трипл и полусап</a></li>
+																			<li><a href="http://dota2.ru/forum/index.php/topic/13648-ne-mogu-videlit-geroev/">Не могу выделить героев...</a></li>
+																								</ul>
+						</div>
+					</div>
+                    
+                        					<div class="page-single">
+    						<h3 class="s14px"><a href="http://dota2.ru/tournaments/">Турниры</a></h3>
+    						<div class="page-single-wrap">
+                                
+                                                                                                            <a href="http://dota2.ru/news/plamennyjj-privet-s-vostoka/" class="page-video-link">
+            								<div class="str-single-name">Пламенный привет с Востока!</div>
+            								<div class="str-single-img"><img src="http://dota2.ru/uploads/images/1hqh.jpg"></div>
+            							</a>
+                                                                            <a href="http://dota2.ru/news/west-kvalifikaciya/" class="page-video-link">
+            								<div class="str-single-name">West квалификация</div>
+            								<div class="str-single-img"><img src="http://dota2.ru/uploads/images/21knk.jpg"></div>
+            							</a>
+                                                                            <a href="http://dota2.ru/news/gamer-university-anonsirovali-seriju-turnirov-za-glavnyjj-priz-10000/" class="page-video-link">
+            								<div class="str-single-name">Gamer University анонсировали Серию турниров за главный приз - $10,000</div>
+            								<div class="str-single-img"><img src="http://dota2.ru/uploads/images/gamerunive.jpg"></div>
+            							</a>
+                                                                            <a href="http://dota2.ru/news/arena-ii-v-ehti-vykhodnykh/" class="page-video-link">
+            								<div class="str-single-name">Arena II в эти выходных!</div>
+            								<div class="str-single-img"><img src="http://dota2.ru/uploads/images/2sus.jpg"></div>
+            							</a>
+                                                                                                    
+    							<div class="clb"></div>
+    						</div>
+    					</div>
+                                        
+                        					<div class="page-single">
+    						<h3 class="s14px"><a href="http://dota2.ru/matches/">Матчи</a></h3>
+                            
+                                                             
+                                
+                                        <div class="single-match">
+                							<div class="sm-tourname">ProDOTA World League - Groupstage</div>
+                							<div class="sm-time">31.07 18:00</div>
+                							<div class="sm-teams">
+                								<div class="sm-team1">
+                									<div class="sm-country1"><img src="http://dota2.ru/img/flags/th.png" alt="img"/></div>
+                									<div class="sm-name1">MiTH</div>
+                								</div>
+                								<div class="sm-vs">vs</div>
+                								<div class="sm-team2">
+                									<div class="sm-country2"><img src="http://dota2.ru/img/flags/sg.png" alt="img"/></div>
+                									<div class="sm-name2">Zenith</div>
+                								</div>
+                							</div>
+                							<div class="clb"></div>
+                						</div>
+                                    
+                                 
+                                
+                                        <div class="single-match">
+                							<div class="sm-tourname">TI 2012 East Qualifier - Winnerbracket Preliminary</div>
+                							<div class="sm-time">06.06 12:00</div>
+                							<div class="sm-teams">
+                								<div class="sm-team1">
+                									<div class="sm-country1"><img src="http://dota2.ru/img/flags/ph.png" alt="img"/></div>
+                									<div class="sm-name1">Mski</div>
+                								</div>
+                								<div class="sm-vs">vs</div>
+                								<div class="sm-team2">
+                									<div class="sm-country2"><img src="http://dota2.ru/img/flags/th.png" alt="img"/></div>
+                									<div class="sm-name2">MiTH</div>
+                								</div>
+                							</div>
+                							<div class="clb"></div>
+                						</div>
+                                    
+                                 
+                                
+                                        <div class="single-match">
+                							<div class="sm-tourname">ProDOTA World League - Groupstage</div>
+                							<div class="sm-time">05.06 22:00</div>
+                							<div class="sm-teams">
+                								<div class="sm-team1">
+                									<div class="sm-country1"><img src="http://dota2.ru/img/flags/cn.png" alt="img"/></div>
+                									<div class="sm-name1">EH</div>
+                								</div>
+                								<div class="sm-vs">vs</div>
+                								<div class="sm-team2">
+                									<div class="sm-country2"><img src="http://dota2.ru/img/flags/au.png" alt="img"/></div>
+                									<div class="sm-name2">aL</div>
+                								</div>
+                							</div>
+                							<div class="clb"></div>
+                						</div>
+                                    
+                                 
+                                
+                                        <div class="single-match">
+                							<div class="sm-tourname">ProDOTA World League - Groupstage</div>
+                							<div class="sm-time">05.06 22:00</div>
+                							<div class="sm-teams">
+                								<div class="sm-team1">
+                									<div class="sm-country1"><img src="http://dota2.ru/img/flags/ua.png" alt="img"/></div>
+                									<div class="sm-name1">Darer</div>
+                								</div>
+                								<div class="sm-vs">vs</div>
+                								<div class="sm-team2">
+                									<div class="sm-country2"><img src="http://dota2.ru/img/flags/ru.png" alt="img"/></div>
+                									<div class="sm-name2">VP</div>
+                								</div>
+                							</div>
+                							<div class="clb"></div>
+                						</div>
+                                    
+                                                                                        
+    						
+    					</div>
+                    				</div>
+				<div class="clb"></div>
+			</div>
+		</div>
+		<div class="bg-btm"></div>
+	</div><div class="footer-top"></div>
+	<div class="footer">
+		<div class="counters">
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a rel='nofollow' href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t38.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+		</div>
+		<div class="copyrights">&copy; 2010-2012 Все права защищены</div>
+		<div class="social">
+			<a class="s-vk" rel="nofollow" href="http://vk.com/dota2ru" target="_blank"><img src="http://dota2.ru/img/vk.png" alt="img"/></a>
+			<a class="s-twitter" rel="nofollow" href="http://twitter.com/dota2russia" target="_blank"><img src="http://dota2.ru/img/twitter.png" alt="img"/></a>
+			<a class="s-youtube" rel="nofollow" href="http://www.youtube.com/user/dota2ru" target="_blank"><img src="http://dota2.ru/img/youtube.png" alt="img"/></a>
+			<a class="s-steam" rel="nofollow" href="http://steamcommunity.com/groups/dota2ru" target="_blank"><img src="http://dota2.ru/img/steam.png" alt="img"/></a>
+			<a class="s-mirc" href="http://dota2.ru/news/dobro-pozhalovat-k-nam#mirc"><img src="http://dota2.ru/img/mirc.png" alt="img"/></a>
+			<a class="s-teamspeak" href="http://dota2.ru/news/dobro-pozhalovat-k-nam#ts"><img src="http://dota2.ru/img/ts.png" alt="img"/></a>
+		</div>
+		<div class="clb"></div>
+	</div>
+</div>
+<script type="text/javascript">
+function stopError(){return true;}
+window.onerror = stopError;
+var am_jq=0; if(window.jQuery){am_jq=1;}
+var am_loc=escape(top.location.href.substring(0,255));
+var am_ref=escape(document.referrer.substring(0,255));
+var am_title=encodeURIComponent(document.getElementsByTagName("TITLE")[0].innerHTML.substring(0,100));
+var am_rand=Math.floor(Math.random()*10000);	
+var am_code_cu=document.createElement("script"); am_code_cu.type="text/javascript";
+am_code_cu.src="http://am10.ru/code.php?type=cu&jq="+am_jq+"&rand="+am_rand+"&u=9076&loc="+am_loc+"&ref="+am_ref+"&title="+am_title;
+document.body.appendChild(am_code_cu);
+</script>
+</body>
+</html>

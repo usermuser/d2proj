@@ -1,0 +1,368 @@
+/*
+---------------------------------------
+    Герои
+---------------------------------------
+*/
+
+.hero_tool_block {
+    padding:5px;
+    background:#0f0f0f;
+    border:1px solid #3b3b3b;
+}
+
+.hero_tool_img {
+    float:left;
+    width:184px;
+}
+
+.item_tool_img {
+    float:left;
+    width:100px;
+}
+
+.item_tool_img img {
+    max-width:90px;
+    padding:1px;
+    border:1px solid #333;
+}
+
+.hero_tool_img img {
+    max-width:180px;
+    padding:1px;
+    border:1px solid #333;
+}
+
+.hero_tool_img_skills img {
+    max-width:39px;
+}
+
+.hero_tool_info {
+    float:left;
+    margin-left:5px;
+    width:245px;
+}
+
+.item_tool_info {
+    float:left;
+    margin-left:5px;
+    width:330px;
+}
+
+.hero_tool_info_name {
+    font-size:16px;
+    color:#fff;
+}
+
+.hero_tool_info_lastname {
+    font-size:12px;
+    color:#db8b2f;
+}
+
+.hero_tool_info_main {
+    font-size:11px;
+    color:#c8c8c8;
+}
+
+.trade_tooltip_img {
+    position:relative;
+    top:-96px;
+    right:-280px;
+    margin-bottom:-60px;
+    max-width:50px;
+    padding:1px;
+    border:1px solid #444;
+    vertical-align:inherit;
+}
+
+.hero_tool_info_main I {
+    color:#606060;
+    font-weight:normal;
+}
+
+.hero_tool_info_main STRONG {
+    font-weight:normal;
+    color:#db8b2f;
+}
+
+
+.hero_tool_info_attr {
+    margin-top:5px;
+}
+
+.hero_tool_info_attr_single {
+    float:left;
+}
+
+.hero_tool_info_attr_single_one {
+    float:left;
+    font-size:10px;
+    color:#606060;
+    text-align:center;
+    padding:3px;
+    width:60px;
+}
+
+.hero_tool_info_attr_single_two {
+    float:left;
+    width:165px;
+    font-size:10px;
+    margin-left:5px;
+    padding:3px;
+    color:#c8c8c8;
+}
+
+.hero_tool_info_attr_single_backone {
+    background:#202020;
+}
+.hero_tool_info_attr_single_backtwo {
+    background:#0f0f0f;
+}
+
+
+/*
+---------------------------------------
+    Предметы
+---------------------------------------
+*/
+
+.item_view_block STRONG {
+    color:#db8b2f;
+    font-weight:normal;
+}
+
+.item_view_img {
+    float:left;
+    margin-right:5px;
+}
+.item_view_img img {
+    padding:1px;
+    border:1px solid #444;
+}
+
+.item_view_miniinfo {
+    float:left;
+    padding-top:10px;
+    width:600px;
+}
+.item_view_title {
+    font-size:16px;
+    color:#e8e8e8;
+}
+
+.item_view_miniinfo STRONG {
+    color:#666;
+    font-weight:normal;
+}
+
+.item_view_title_line {
+    color:#666;
+    font-weight:normal;
+}
+
+.item_view_collected {
+    margin-bottom:10px;
+}
+.item_view_collected img {
+    max-width:60px;
+    padding:1px;
+    border:1px solid #444;
+}
+
+/*
+*   Рынок
+*/
+
+.trade_view_block span {
+    color:#db8b2f;
+}
+
+.trade_view_img {
+    padding:1px;
+    width:58px;
+    border:1px solid #333;
+}
+
+.trade_view_send, .trade_view_get {
+    width:330px;
+    min-height:90px;
+    margin:0 0 8px;
+	background: url(../img/dark-bg.png) repeat;
+	border: 1px solid #000;
+	padding: 7px;
+	border-radius:5px;    
+}
+
+.trade_view_send img, .trade_view_get img {
+    max-width:50px;
+    padding:1px;
+    margin:1px;
+    border:1px solid #444;
+}
+
+.trade_view_send {
+    float:left;  
+}
+
+.trade_view_get {
+    float:right;
+}
+
+.all_header {
+    font-size:15px;
+    padding:5px;
+}
+
+.trade_background {
+    padding-left:110px;
+    background:url('../img/bgTrade.png') left center no-repeat;
+}
+
+
+
+
+
+.trande_single_block {
+    display: table;
+    float: left;
+    vertical-align: middle;
+    width: 100%;
+    border-bottom:1px solid #212121;
+}
+
+.trande_single_nick, .trande_single_gives, .trande_single_receives, .trande_single_more, .trande_single_arrow, .trande_single_arrow_close {
+    display: table-cell;
+    vertical-align: inherit;
+    padding:3px 7px;
+    word-wrap:break-word;
+    overflow:hidden;
+    
+}
+
+.trande_single_nick {
+    width:100px;
+    border-right:0px;
+}
+
+.trande_single_block a:link, .trande_single_block a:visited {
+    position:relative;
+    top:10px;
+    right:7px;
+    text-decoration: none;
+    background:#222;
+    padding:3px 5px;
+    border-radius:3px;
+}
+
+.trande_single_block a:hover {
+    color:#777;
+    background:#e2e2e2;
+}
+
+.trande_single_block div {
+    margin:6px 0px;
+}
+
+
+
+.trande_single_gives, .trande_single_receives {
+    width:220px;
+    border-right:0px;
+    text-align:center;
+}
+
+.trande_single_gives img, .trande_single_receives img {
+    border:1px solid #444;
+}
+
+.trande_single_arrow {
+    width:50px;
+    height:42px;
+    background:url('../img/arrow_trade.png') center no-repeat;
+}
+
+.trande_single_arrow_close {
+    width:50px;
+    height:42px;
+    background:url('../img/arrow_trade_close.png') center no-repeat;
+}
+
+.trande_single_more span {
+    font-size:12px;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:37px;
+	text-shadow: 0px 0px 10px #42a6b8;
+	color:#c1f0fa;
+}
+
+
+.trade_add_set {
+    height:160px;
+    overflow:auto;
+}
+.trade_add_set img {
+    max-width:59px;
+    padding:1px;
+    border:1px solid #444;
+}
+
+.trade_textarea {
+    width:500px; max-width:500px;
+    min-height:198px;
+    margin:0 0 8px;
+	background: url(../img/dark-bg.png) repeat;
+	border: 1px solid #000;
+	padding: 7px;
+	border-radius:5px;
+    color:#e0e0e0;
+}
+
+.trade_add_submit {
+    padding:5px 10px;
+}
+
+.trade_add_input {
+    width:140px; max-width:500px;
+    margin:0 0 8px;
+	background: url(../img/dark-bg.png) repeat;
+	border: 1px solid #000;
+	padding: 7px;
+	border-radius:5px;
+    color:#e0e0e0;
+}
+
+.trade_edit_status {
+    width:180px; max-width:500px;
+    margin:0 0 8px;
+	background: #111;
+	border: 1px solid #000;
+	padding: 7px;
+	border-radius:5px;
+    color:#e0e0e0;
+}
+
+.trade_edit_up {
+    width:165px; max-width:500px;
+    margin:0 0 8px;
+	background: #111;
+	border: 1px solid #000;
+	padding: 7px;
+	border-radius:5px;
+    color:#e0e0e0;
+}
+
+.trade_map {
+    float:left;
+    padding:10px 0px;
+}
+
+.trade_filter a:link, .trade_filter a:visited {
+    padding:5px;
+    text-decoration:none;
+    background:#000;
+    border-radius:3px;
+}
+
+.trade_filter a:hover {
+    background:#222;
+}

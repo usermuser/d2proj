@@ -1,0 +1,11 @@
+from d2app.models import Hero, Item
+from django.contrib import admin
+#from d2proj.d2app.models import Hero, Item
+
+class HeroAdmin(admin.ModelAdmin):
+    search_fields = ('name')
+
+admin.site.register(Hero)
+admin.site.register(Item)
+
+

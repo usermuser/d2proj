@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>{{ tryvar.name }}</title>
+</head>
+<body bgcolor="grey">
+</html>
+
+

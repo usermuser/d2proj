@@ -1,0 +1,401 @@
+<html>
+<head>
+{% load static %}
+{% get_static_prefix as STATIC_URL %}
+<title>{{ tryvar.name }}</title>
+<link href="{{ STATIC_URL }}css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body bgcolor="grey">
+
+<div id="header"><img src="{{ STATIC_URL}}img/logo.png"></div>
+
+<div id="ico_big"><img src="{{ STATIC_URL }}img/heroes/{{ tryvar.name }}/ico_big.jpg" width="96" height="48" /></div>
+<div id="str_ico"><img src="{{ STATIC_URL }}img/str_ico.png" />{{ tryvar.strenght }}</div>
+<div id="agi_ico"><img src="{{ STATIC_URL }}img/agi_ico.png" />{{ tryvar.agility }}</div>
+<div id="int_ico"><img src="{{ STATIC_URL }}img/int_ico.png" />{{ tryvar.intellect }}</div>
+<div id="hp">Здоровье</div>
+<div id="mana">Мана</div>
+<div id="dmg">Урон</div>
+<div id="range">Дистанция атаки</div>
+<div id="armor">Броня</div>
+<div id="speed">Скорость</div>
+
+<!--   ИТЕМ ОРДЕР ЛИСТ    -->
+
+
+<div id="ritems">
+    <table width="420" height="50" border="0">
+    <tr>
+    <td width="66"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item1 }}.jpg" width="66" height="44" /></td>
+    <td width="66"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item2 }}.jpg" width="66" height="44" /></td>
+    <td width="66"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item3 }}.jpg" width="66" height="44" /></td>
+    <td width="66"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item4 }}.jpg" width="66" height="44" /></td>
+    <td width="66"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item5 }}.jpg" width="66" height="44" /></td>
+    <td width="66"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item6 }}.jpg" width="66" height="44" /></td>
+    </tr>
+    </table>
+</div>
+
+
+
+<!-- ЗАКЛИНАНИЯ -->
+
+
+<div id="skill1img"><img src="{{ STATIC_URL }}img/heroes/{{ tryvar.name }}/sk1.jpg" width="64" height="64" /></div>
+<div id="skill2img"><img src="{{ STATIC_URL }}img/heroes/{{ tryvar.name }}/sk2.jpg" width="64" height="64" /></div>
+<div id="skill3img"><img src="{{ STATIC_URL }}img/heroes/{{ tryvar.name }}/sk3.jpg" width="64" height="64" /></div>
+<div id="skill4img"><img src="{{ STATIC_URL }}img/heroes/{{ tryvar.name }}/sk4.jpg" width="64" height="64" /></div>
+<div id="skill1txt">{{ tryvar.skill1txt }}</div>
+<div id="skill2txt">{{ tryvar.skill2txt }}</div>
+<div id="skill3txt">{{ tryvar.skill3txt }}</div>
+<div id="skill4txt">{{ tryvar.skill4txt }}</div>
+
+
+
+
+<!-- HEROES  -->
+    <!--СИЛА РАДИАНТ-->
+
+
+    <div id="earthshaker">
+        <a href="/hero/earthshaker/"><img src="{{ STATIC_URL }}img/heroes/earthshaker/ico_big.jpg" width="80" height="38" />
+    </div>
+    
+    <div id="sven">
+        <a href="/hero/sven/"><img src="{{ STATIC_URL }}img/heroes/sven/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="tiny">
+        <a href="/hero/tiny/"><img src="{{ STATIC_URL }}img/heroes/tiny/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="kunkka">
+        <a href="/hero/kunkka/"><img src="{{ STATIC_URL }}img/heroes/kunkka/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="beastmaster">
+        <a href="/hero/beastmaster/"><img src="{{ STATIC_URL }}img/heroes/beastmaster/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="dragon-knight">
+        <a href="/hero/dragon knight/"><img src="{{ STATIC_URL }}img/heroes/dragon knight/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="clockwerk">
+        <a href="/hero/clockwerk/"><img src="{{ STATIC_URL }}img/heroes/clockwerk/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="omniknight">
+        <a href="/hero/omniknight/"><img src="{{ STATIC_URL }}img/heroes/omniknight/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="huskar">
+        <a href="/hero/huskar/"><img src="{{ STATIC_URL }}img/heroes/huskar/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="alchemist">
+        <a href="/hero/alchemist/"><img src="{{ STATIC_URL }}img/heroes/alchemist/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="brewmaster">
+        <a href="/hero/brewmaster/"><img src="{{ STATIC_URL }}img/heroes/brewmaster/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="treant-protector">
+        <a href="/hero/treant-protector/"><img src="{{ STATIC_URL }}img/heroes/treant-protector/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="wisp">
+        <a href="/hero/wisp/"><img src="{{ STATIC_URL }}img/heroes/wisp/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="anti-mage">
+        <a href="/hero/anti-mage/"><img src="/static/img/heroes/anti-mage/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="drow-ranger">
+        <a href="/hero/drow-ranger/"><img src="/static/img/heroes/drow-ranger/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="juggernaut">
+        <a href="/hero/juggernaut/"><img src="/static/img/heroes/juggernaut/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="mirana">
+        <a href="/hero/mirana/"><img src="/static/img/heroes/mirana/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="morphling">
+        <a href="/hero/morphling/"><img src="/static/img/heroes/morphling/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="phantom-lancer">
+        <a href="/hero/phantom-lancer/"><img src="/static/img/heroes/phantom-lancer/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="vengeful-spirit">
+        <a href="/hero/vengeful-spirit/"><img src="/static/img/heroes/vengeful-spirit/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="riki">
+        <a href="/hero/riki/"><img src="/static/img/heroes/riki/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="sniper">
+        <a href="/hero/sniper/"><img src="/static/img/heroes/sniper/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="luna">
+        <a href="/hero/luna/"><img src="/static/img/heroes/luna/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="bounty-hunter">
+        <a href="/hero/bounty-hunter/"><img src="/static/img/heroes/bounty-hunter/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="ursa">
+        <a href="/hero/ursa/"><img src="/static/img/heroes/ursa/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="gyrocopter">
+        <a href="/hero/gyrocopter/"><img src="/static/img/heroes/gyrocopter/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="lone-druid">
+        <a href="/hero/lone-druid/"><img src="/static/img/heroes/lone-druid/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="crystal-maiden">
+        <a href="/hero/crystal-maiden/"><img src="/static/img/heroes/crystal-maiden/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="puck">
+        <a href="/hero/puck/"><img src="/static/img/heroes/puck/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="storm-spirit">
+        <a href="/hero/storm-spirit/"><img src="/static/img/heroes/storm-spirit/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="windrunner">
+        <a href="/hero/windrunner/"><img src="/static/img/heroes/windrunner/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="zeus">
+        <a href="/hero/zeus/"><img src="/static/img/heroes/zeus/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="lina">
+        <a href="/hero/lina/"><img src="/static/img/heroes/lina/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="shadow-shaman">
+        <a href="/hero/shadow-shaman/"><img src="/static/img/heroes/shadow-shaman/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="tinker">
+        <a href="/hero/tinker/"><img src="/static/img/heroes/tinker/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="natures-prophet">
+        <a href="/hero/natures-prophet/"><img src="/static/img/heroes/natures-prophet/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="enchantress">
+        <a href="/hero/enchantress/"><img src="/static/img/heroes/enchantress/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="jakiro">
+        <a href="/hero/jakiro/"><img src="/static/img/heroes/jakiro/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="chen">
+        <a href="/hero/chen/"><img src="/static/img/heroes/chen/ico_big.jpg" width="80" height="38" />
+    </div>
+    
+    <div id="silencer">
+        <a href="/hero/silencer/"><img src="/static/img/heroes/silencer/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="ogre-magi">
+        <a href="/hero/ogre-magi/"><img src="/static/img/heroes/ogre-magi/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="disruptor">
+        <a href="/hero/disruptor/"><img src="/static/img/heroes/disruptor/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="rubick">
+        <a href="/hero/rubick/"><img src="/static/img/heroes/rubick/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    
+    <div id="axe">
+        <a href="/hero/axe/"><img src="/static/img/heroes/axe/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="pudge">
+        <a href="/hero/pudge/"><img src="/static/img/heroes/pudge/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="sand-king">
+        <a href="/hero/sand-king/"><img src="/static/img/heroes/sand-king/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="slardar">
+        <a href="/hero/slardar/"><img src="/static/img/heroes/slardar/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="tidehunter">
+        <a href="/hero/tidehunter/"><img src="/static/img/heroes/tidehunter/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="skeleton-king">
+        <a href="/hero/skeleton-king/"><img src="/static/img/heroes/skeleton-king/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="lifestealer">
+        <a href="/hero/lifestealer/"><img src="/static/img/heroes/lifestealer/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="night-stalker">
+        <a href="/hero/night-stalker/"><img src="/static/img/heroes/night-stalker/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="doom-bringer">
+        <a href="/hero/doom-bringer/"><img src="/static/img/heroes/doom-bringer/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="spirit-breaker">
+        <a href="/hero/spirit-breaker/"><img src="/static/img/heroes/spirit-breaker/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="lycanthrope">
+        <a href="/hero/lycanthrope/"><img src="/static/img/heroes/lycanthrope/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="chaos-knight">
+        <a href="/hero/chaos-knight/"><img src="/static/img/heroes/chaos-knight/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="undying">
+        <a href="/hero/undying/"><img src="/static/img/heroes/undying/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="bloodseeker">
+        <a href="/hero/bloodseeker/"><img src="/static/img/heroes/bloodseeker/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="shadow-fiend">
+        <a href="/hero/shadow-fiend/"><img src="/static/img/heroes/shadow-fiend/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="razor">
+        <a href="/hero/razor/"><img src="/static/img/heroes/razor/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="venomancer">
+        <a href="/hero/venomancer/"><img src="/static/img/heroes/venomancer/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="faceless-void">
+        <a href="/hero/faceless-void/"><img src="/static/img/heroes/faceless-void/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="phantom-assassin">
+        <a href="/hero/phantom-assassin/"><img src="/static/img/heroes/phantom-assassin/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="viper">
+        <a href="/hero/viper/"><img src="/static/img/heroes/viper/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="clinkz">
+        <a href="/hero/clinkz/"><img src="/static/img/heroes/clinkz/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="broodmother">
+        <a href="/hero/broodmother/"><img src="/static/img/heroes/broodmother/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="weaver">
+        <a href="/hero/weaver/"><img src="/static/img/heroes/weaver/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="spectre">
+        <a href="/hero/spectre/"><img src="/static/img/heroes/spectre/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="bane">
+        <a href="/hero/bane/"><img src="/static/img/heroes/bane/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="lich">
+        <a href="/hero/lich/"><img src="/static/img/heroes/lich/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="lion">
+        <a href="/hero/lion/"><img src="/static/img/heroes/lion/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="witch-doctor">
+        <a href="/hero/witch-doctor/"><img src="/static/img/heroes/witch-doctor/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="enigma">
+        <a href="/hero/enigma/"><img src="/static/img/heroes/enigma/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="necrolyte">
+        <a href="/hero/necrolyte/"><img src="/static/img/heroes/necrolyte/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="warlock">
+        <a href="/hero/warlock/"><img src="/static/img/heroes/warlock/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="queen-of-pain">
+        <a href="/hero/queen-of-pain/"><img src="/static/img/heroes/queen-of-pain/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="death-prophet">
+        <a href="/hero/death-prophet/"><img src="/static/img/heroes/death-prophet/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="pugna">
+        <a href="/hero/pugna/"><img src="/static/img/heroes/pugna/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="dazzle">
+        <a href="/hero/dazzle/"><img src="/static/img/heroes/dazzle/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="leshrac">
+        <a href="/hero/leshrac/"><img src="/static/img/heroes/leshrac/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="dark-seer">
+        <a href="/hero/dark-seer/"><img src="/static/img/heroes/dark-seer/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="batrider">
+        <a href="/hero/batrider/"><img src="/static/img/heroes/batrider/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="ancient-apparition">
+        <a href="/hero/ancient-apparition/"><img src="/static/img/heroes/ancient-apparition/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="invoker">
+        <a href="/hero/invoker/"><img src="/static/img/heroes/invoker/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="outworld-destroer">
+        <a href="/hero/outworld-destroer/"><img src="/static/img/heroes/outworld-destroer/ico_big.jpg" width="80" height="38" />
+    </div>
+
+    <div id="shadow-demon">
+        <a href="/hero/shadow-demon/"><img src="/static/img/heroes/shadow-demon/ico_big.jpg" width="80" height="38" />
+    </div>
+</html>

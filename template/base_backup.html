@@ -1,0 +1,97 @@
+<html>
+<head>
+{% load static %}
+{% get_static_prefix as STATIC_URL %}
+<title>{{ tryvar.name }}</title>
+<link href="{{ STATIC_URL }}css/style.css" rel="stylesheet" type="text/css" />
+<link href="{{ STATIC_URL }}css/all-heroes-tooltip.css" rel="stylesheet" type="text/css" />
+</head>
+<body bgcolor="grey">
+
+<div id="ico_big"><img src="{{ STATIC_URL }}img/heroes/{{ tryvar.name }}/ico_big.jpg" width="200" height="100" /></div>
+<div id="str_ico"><img src="{{ STATIC_URL }}img/str_ico.png" />{{ tryvar.strenght }}</div>
+<div id="agi_ico"><img src="{{ STATIC_URL }}img/agi_ico.png" />{{ tryvar.agility }}</div>
+<div id="int_ico"><img src="{{ STATIC_URL }}img/int_ico.png" />{{ tryvar.intellect }}</div>
+
+
+<!--   ИТЕМ ОРДЕР    -->
+
+
+<div id="ritems">
+    <table width="494" height="55" border="0">
+    <tr>
+    <td width="85"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item1 }}.jpg" width="85" height="64" /></td>
+    <td width="85"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item2 }}.jpg" width="85" height="64" /></td>
+    <td width="85"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item3 }}.jpg" width="85" height="64" /></td>
+    <td width="85"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item4 }}.jpg" width="85" height="64" /></td>
+    <td width="85"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item5 }}.jpg" width="85" height="64" /></td>
+    <td width="85"><img src="{{ STATIC_URL }}img/items/{{ tryvar.item6 }}.jpg" width="85" height="64" /></td>
+    </tr>
+    </table>
+</div>
+
+
+
+<!-- ЗАКЛИНАНИЯ -->
+
+
+<div id="skill1img"><img src="{{ STATIC_URL }}img/heroes/{{ tryvar.name }}/sk1.jpg" width="64" height="64" /></div>
+<div id="skill1txt">{{ tryvar.skill1txt }} </div>
+<div id="skill2img"><img src="{{ STATIC_URL }}img/heroes/{{ tryvar.name }}/sk2.jpg" width="64" height="64" /></div>
+<div id="skill2txt">{{ tryvar.skill2txt }}</div>
+<div id="skill3img"><img src="{{ STATIC_URL }}img/heroes/{{ tryvar.name }}/sk3.jpg" width="64" height="64" /></div>
+<div id="skill3txt">{{ tryvar.skill3txt }}</div>
+<div id="skill4img"><img src="{{ STATIC_URL }}img/heroes/{{ tryvar.name }}/sk4.jpg" width="64" height="64" /></div>
+<div id="skill4txt">{{ tryvar.skill4txt }}</div>
+
+
+
+
+<!-- HEROES  -->
+
+
+<div id="earthshaker">
+    <a class="htooltip" href="/hero/earthshaker/">
+        <img src="{{ STATIC_URL }}img/heroes/earthshaker/ico_big.jpg" width="96" height="48"/>
+		<all-heroes>ДОДЕЛАТЬ ТУЛТИПЫ!<img src="{{ STATIC_URL }}img/heroes/earthshaker/ico_big.jpg" width="64" height="32"/>
+		</all-heroes>
+    </a>
+</div>
+
+<div id="sven">
+<a class="htooltip" href="/hero/sven/"><img src="{{ STATIC_URL }}img/heroes/sven/ico_big.jpg" width="96" height="48" />
+<all-heroes>ДОДЕЛАТЬ ТУЛТИПЫ!
+<img src="{{ STATIC_URL }}img/heroes/sven/ico_big.jpg"width="64" height="32"/>
+</all-heroes>
+</a>
+</div>
+
+<div id="night-stalker"><a class="htooltip" href="/hero/night stalker/"><img src="{{ STATIC_URL }}img/heroes/night stalker/ico_big.jpg" width="96" height="48" /><all-heroes>ДОДЕЛАТЬ ТУЛТИПЫ!<img src="{{ STATIC_URL }}img/heroes/night stalker/ico_big.jpg" width="64" height="32"/></all-heroes></a> </div>
+
+<div id="tiny"><a class="htooltip" href="/hero/tiny/"><img src="{{ STATIC_URL }}img/heroes/tiny/ico_big.jpg" width="96" height="48" /><all-heroes>ДОДЕЛАТЬ ТУЛТИПЫ!<img src="{{ STATIC_URL }}img/heroes/tiny/ico_big.jpg" width="64" height="32"/></all-heroes></a> </div>
+
+<div id="kunkka"><a class="htooltip" href="/hero/kunkka/"><img src="{{ STATIC_URL }}img/heroes/kunkka/ico_big.jpg" width="96" height="48" /><all-heroes>ДОДЕЛАТЬ ТУЛТИПЫ!<img src="{{ STATIC_URL }}img/heroes/kunkka/ico_big.jpg" width="64" height="32"/></all-heroes></a> </div>
+
+<div id="beastmaster"><a class="htooltip" href="/hero/beastmaster/"><img src="{{ STATIC_URL }}img/heroes/beastmaster/ico_big.jpg" width="96" height="48"/><all-heroes>ДОДЕЛАТЬ ТУЛТИПЫ!<img src="{{ STATIC_URL }}img/heroes/beastmaster/ico_big.jpg" width="64" height="32"/></all-heroes></a> </div>
+
+<div id="dragon-knight"><a class="htooltip" href="/hero/dragon knight/"><img src="{{ STATIC_URL }}img/heroes/dragon knight/ico_big.jpg" width="96" height="48" /><all-heroes>ДОДЕЛАТЬ ТУЛТИПЫ!<img src="{{ STATIC_URL }}img/heroes/dragon knight/ico_big.jpg" width="64" height="32"/></all-heroes></a> </div>
+
+<div id="clockwerk"><a class="htooltip" href="/hero/clockwerk/"><img src="{{ STATIC_URL }}img/heroes/clockwerk/ico_big.jpg" width="96" height="48" /><all-heroes>ДОДЕЛАТЬ ТУЛТИПЫ!<img src="{{ STATIC_URL }}img/heroes/clockwerk/ico_big.jpg" width="64" height="32"/></all-heroes></a> </div>
+
+<div id="omniknight">
+	<a class="htooltip" href="/hero/omniknight/"><img src="{{ STATIC_URL }}img/heroes/omniknight/ico_big.jpg" width="96" height="48"/>
+		<all-heroes>ДОДЕЛАТЬ ТУЛТИПЫ!
+		<img src="{{ STATIC_URL }}img/heroes/omniknight/ico_big.jpg" width="64" height="32"/>
+		</all-heroes>
+	</a>
+</div>
+
+<div id="huskar">
+	<a class="htooltip" href="/hero/huskar/"><img src="{{ STATIC_URL }}img/heroes/huskar/ico_big.jpg" width="96" height="48"/>
+		<all-heroes>ДОДЕЛАТЬ ТУЛТИПЫ!
+		<img src="{{ STATIC_URL }}img/heroes/huskar/ico_big.jpg" width="64" height="32"/>
+		</all-heroes>
+	</a>
+</div>
+
+</html>

@@ -1,0 +1,784 @@
+/*-- HEADER --*/
+
+#header {
+	width:1000px;
+	height:150px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+
+/*--HEROES--*/
+
+#earthshaker {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top:620px;
+	left:60px;
+}
+#sven {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top:620px;
+	left:141px;
+}
+#tiny {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top:620px;
+	left:222px;
+}
+#kunkka {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top:620px;
+	left:303px;
+}
+#beastmaster {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top:659px;
+	left:60px;
+}
+#dragon-knight {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top:659px;
+	left:141px;
+}
+#clockwerk {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top:659px;
+	left:222px;
+}
+#omniknight {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top:659px;
+	left:303px;
+}
+#huskar {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 698px;
+	left:60px;
+}
+#alchemist {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 698px;
+	left:141px;
+}
+#brewmaster {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 698px;
+	left:222px;
+}
+#treant-protector {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 698px;
+	left:303px;
+}
+#wisp {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 737px;
+	left:60px;
+}
+#crystal-maiden {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 990px;
+	left:60px;
+}
+#puck {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 990px;
+	left:141px;
+}
+#storm-spirit {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 990px;
+	left:222px;
+}
+#zeus {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1029px;
+	left:60px;
+}
+#lina {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1029px;
+	left:141px;
+}
+#shadow-shaman {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1029px;
+	left:222px;
+}
+#tinker {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1029px;
+	left:303px;
+}
+#natures-prophet {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1068px;
+	left:60px;
+}
+#enchantress {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1068px;
+	left:141px;
+}
+#jakiro {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1068px;
+	left:222px;
+}
+#chen {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1068px;
+	left:303px;
+}
+#silencer {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1107px;
+	left:60px;
+}
+#ogre-magi {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1107px;
+	left:141px;
+}
+#disruptor {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1107px;
+	left:222px;
+}
+#anti-mage {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 805px;
+	left:60px;
+}
+#drow-ranger {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 805px;
+	left:141px;
+}
+#juggernaut {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 805px;
+	left:222px;
+}
+#mirana {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top:805px;
+	left:303px;
+}
+#morphling {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 844px;
+	left:60px;
+}
+#phantom-lancer {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 844px;
+	left:141px;
+}
+#vengeful-spirit {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 844px;
+	left:222px;
+}
+#riki {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 844px;
+	left:303px;
+}
+#sniper {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 883px;
+	left:60px;
+}
+#luna {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 883px;
+	left:141px;
+}
+#bounty-hunter {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 883px;
+	left:222px;
+}
+#ursa {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 883px;
+	left:303px;
+}
+#gyrocopter {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 922px;
+	left:60px;
+}
+#lone-druid {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 922px;
+	left:141px;
+}
+#rubick {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1107px;
+	left:303px;
+}
+#windrunner {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 990px;
+	left:303px;
+}
+
+
+#axe {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 620px;
+	left: 401px;
+}
+#pudge {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 620px;
+	left: 482px;
+}
+#sand-king {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 620px;
+	left: 563px;
+}
+#slardar {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 620px;
+	left: 644px;
+}
+#tidehunter {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 659px;
+	left: 401px;
+}
+#skeleton-king {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 659px;
+	left: 482px;
+}
+#lifestealer {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 659px;
+	left: 563px;
+}
+#night-stalker {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 659px;
+	left: 644px;
+}
+#doom-bringer {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 698px;
+	left: 401px;
+}
+#spirit-breaker {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 698px;
+	left: 482px;
+}
+#lycanthrope {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 698px;
+	left: 563px;
+}
+#chaos-knight {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 698px;
+	left: 644px;
+}
+#undying {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 737px;
+	left: 401px;
+}
+#bloodseeker {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 805px;
+	left:401px;
+}
+#shadow-fiend {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 805px;
+	left: 482px;
+}
+#razor {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 805px;
+	left: 563px;
+}
+#venomancer {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 805px;
+	left:644px;
+}
+#faceless-void {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 844px;
+	left:401px;
+}
+#phantom-assassin {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 844px;
+	left:482px;
+}
+#viper {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 844px;
+	left:563px;
+}
+#clinkz {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 844px;
+	left:644px;
+}
+#broodmother {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 883px;
+	left:401px;
+}
+#weaver {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 883px;
+	left:482px;
+}
+#spectre {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 883px;
+	left:563px;
+}
+#bane {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 990px;
+	left:401px;
+}
+#lich {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 990px;
+	left:482px;
+}
+#lion {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 990px;
+	left:563px;
+}
+#witch-doctor{
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 990px;
+	left:644px;
+}
+#enigma{
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1029px;
+	left:401px;
+}
+#necrolyte{
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1029px;
+	left:482px;
+}
+#warlock{
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1029px;
+	left:563px;
+}
+#queen-of-pain{
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1029px;
+	left:644px;
+}
+#death-prophet{
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1068px;
+	left:401px;
+}
+#pugna{
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1068px;
+	left:482px;
+}
+#dazzle{
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1068px;
+	left:563px;
+}
+#leshrac{
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1068px;
+	left:644px;
+}
+#dark-seer {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1107px;
+	left:401px;
+}
+#batrider {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1107px;
+	left:482px;
+}
+#ancient-apparition {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1107px;
+	left:563px;
+}
+#invoker {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1107px;
+	left:644px;
+}
+#outworld-destroer {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1146px;
+	left:401px;
+}
+#shadow-demon {
+	width:80px;
+	height:38px;
+	position:absolute;
+	top: 1146px;
+	left:482px;
+}
+
+
+/* CONTENT */
+
+
+#ico_big {
+	width:96px;
+	height:48px;
+	position:absolute;
+	top:135px;
+	left:55px;
+}
+
+#str_ico {
+	width:150px;
+	height:40px;
+	position:absolute;
+	top:138px;
+	left:165px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+#agi_ico {
+	width:118px;
+	height:20px;
+	position:absolute;
+	top:153px;
+	left:165px;
+	color: #FFFFFF;
+}
+#int_ico {
+	width:118px;
+	height:20px;
+	position:absolute;
+	top:169px;
+	left:165px;
+	color: #FFFFFF;
+}
+
+#hp {
+        font-family:"Myriad Pro", "arial","sans-serif";
+        font-size:12;
+	width:50px;
+	height:20px;
+	position:absolute;
+	top:140px;
+	left:260px;
+	color:rgb(255,155,0);
+}
+#mana {
+        font-family:"Myriad Pro", "arial","sans-serif";
+        font-size:12;
+	width:50px;
+	height:20px;
+	position:absolute;
+	top:140px;
+	left:360px;
+	color:rgb(255,155,0);
+}
+#range {
+        font-family:"Myriad Pro", "arial","sans-serif";
+        font-size:12;
+	width:100px;
+	height:20px;
+	position:absolute;
+	top:140px;
+	left:430px;
+	color:rgb(255,155,0);
+}
+#dmg {
+        font-family:"Myriad Pro", "arial","sans-serif";
+        font-size:12;
+	width:100px;
+	height:20px;
+	position:absolute;
+	top:140px;
+	left:560px;
+	color:rgb(255,155,0);
+}
+#armor {
+        font-family:"Myriad Pro", "arial","sans-serif";
+        font-size:12;
+	width:100px;
+	height:20px;
+	position:absolute;
+	top:140px;
+	left:660px;
+	color:rgb(255,155,0);
+}
+#speed {
+        font-family:"Myriad Pro", "arial","sans-serif";
+        font-size:12;
+	width:100px;
+	height:20px;
+	position:absolute;
+	top:140px;
+	left:760px;
+	color:rgb(255,155,0);
+}
+#ritems {
+	width:484px;
+	height:56px;
+	position:absolute;
+	top:225px;
+	left:55px;
+	
+}
+#skill1img {
+	width:64px;
+	height:64px;
+	position:absolute;
+	top:292px;
+	left:55px;
+}
+#skill2img {
+	width:64px;
+	height:64px;
+	position:absolute;
+	top:365px;
+	left:55px;
+}
+	
+
+#skill3img {
+	width:64px;
+	height:64px;
+	position:absolute;
+	top:441px;
+	left:55px;
+}
+#skill4img {
+	width:64px;
+	height:64px;
+	position:absolute;
+	top:514px;
+	left:55px;
+}
+#skill1txt {
+	width: 100px;
+	height: 60px;
+	position:absolute;
+	top: 295px;
+	left:135px;
+	font-size:11px;
+	color: #FFFFFF;
+}
+#skill2txt {
+	width:349px;
+	height:60px;
+	position:absolute;
+	top: 368px;
+	left: 138px;
+	font-size:11px;
+	color: #FFFFFF;
+}
+
+#skill3txt {
+	width:349px;
+	height:60px;
+	position:absolute;
+	top: 444px;
+	left:135px;
+	font-size:11px;
+	color: #FFFFFF;
+}
+#skill4txt {
+	width:349px;
+	height:60px;
+	position:absolute;
+	top: 517px;
+	left:135px;
+	font-size:11px;
+	color: #FFFFFF;
+}

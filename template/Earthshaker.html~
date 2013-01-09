@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block str %}<b>22 + 2.50</b>{% endblock %}
+{% block int %}16 + 1.80{% endblock %}
+{% block agi %}12 + 1.40{% endblock %}
+{% block 1item %}{% endblock %}
+{% block 2item %}{% endblock %}
+{% block 3item %}{% endblock %}
+{% block 4item %}{% endblock %}
+{% block 5item %}{% endblock %}
+{% block 6item %}{% endblock %}
